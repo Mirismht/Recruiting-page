@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+font-size: 18px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+width: 100%;
+}
+
+.container-image {
+  height: 100vh;
+  position: relative;
+}
+
+
+.container-image::after {
+  content: "";
+  position: absolute;
+  background-image: url(./Image1/recruitment-concept-searching-for-the-right-employee.jpg) ;
+  height:100vh;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.logo-box{
+  text-align: center;
+  padding: 20px;
+}
+
+.logo{
+  width: min(50%, 400px);
+}
+
+
+.discover h1{
+text-align: center;
+position: relative;
+top: 200px;
+font-size: clamp(1.13rem, calc(0.75rem + 2.00vw), 2.13rem);
+color: #2a5c17;
+}
+
+
+.button {
+  position: relative;
+  text-align: center;
+  top: 300px;
+  width: 100%; 
+
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+  background-color: #4BAD24;
+  padding: 20px 25px;
+  border-radius: 15px;
+  font-size: max(1vw, 0.8rem);
+  background-image: linear-gradient( to right,  rgba(168, 220, 159, 0.8),#74b35b)
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5rem;
+  font-size: smaller;
+  padding-left: 10px;
+
+}
