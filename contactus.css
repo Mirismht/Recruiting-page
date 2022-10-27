@@ -1,0 +1,223 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  width: fit-content;
+
+}
+
+body{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  }
+
+/*BACKGROUND IMAGE*/
+
+  .container-image {
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .container-image::after {
+    content: "";
+    position: absolute;
+    background-image: url(./Image1/recruitment-process.jpg) ;
+    height:100vh;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /*HRADER*/
+  .logo-box{
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .logo{
+    width: min(50%, 300px);
+  }
+
+  .navigation{
+    height: 50px;
+    padding: 10px;
+  }
+
+  .navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  .navigation li{
+    font-size: clamp(0.52rem, calc(0.38rem + 0.71vw), 1.00rem);
+  }
+
+  .navigation a{
+    text-decoration: none;
+    color:#2a5c17;
+  }
+  
+  .navigation li:hover{
+    border-bottom: 3px solid green;
+  }
+
+  /*FORM*/
+form.submission-form{
+  width: 50%;
+  margin-inline: auto;
+  padding-top: 4rem;
+  
+}
+
+.title{
+  color: #2a5c17;
+  font-weight: bolder;
+  font-size:  clamp(0.80rem, calc(0.53rem + 1.36vw), 1.50rem);
+}
+
+.cv{
+  color: #2a5c17;
+  font-weight: 600;
+  font-size: clamp(0.75rem, calc(0.60rem + 0.73vw), 1.13rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:280px;
+  max-width: 80%;
+}
+
+input[type="email"]{
+  padding: 10px 35px;
+  border-radius: 9px;
+  border: none;
+  margin: 5px;
+  font-size: 11px;
+  font-family: Georgia,  serif;
+  text-align: left;
+  width: 280px;
+  max-width: 80%;
+}
+
+#message{
+  margin: 5px;
+  padding:  36px;
+  border-radius: 9px;
+  border: none;
+  font-size: 11px;
+  font-family: Georgia,  serif;
+  text-align: left;
+  width: 280px;
+  max-width: 80%;
+}  
+
+
+
+input[type="file"]{
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 9px;
+  width: 280px;
+  margin: 5px;
+  color: transparent;
+  max-width: 80%;
+}
+
+
+::-webkit-file-upload-button{
+  background: white;
+  color: gray;
+  border: none;
+  
+  
+}
+
+::file-selector-button{
+  font-size: initial;
+  font-family: Georgia, serif;
+  font-size: 11px;
+ 
+  
+}
+
+.btn{
+width: 280px;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 80%;
+}
+
+
+#sendbtn{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  align-items: center;
+}
+
+  /*Address*/
+  address{
+    align-items: center;
+    display: inline-flex;
+    gap: 5px;
+    position: fixed;
+    bottom: 3rem;
+    height: auto;
+    justify-content: end;
+    padding-left: 10px;
+  }
+
+  address a{
+    text-decoration: none;
+    color: #2a5c17;
+    font-weight: bold;
+    font-size: clamp(0.70rem, calc(0.61rem + 0.46vw), 0.94rem);
+  }
+
+  address img{
+    width: min(10%, 40px);
+  }
+
+
+/*FOOTER*/
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 2rem;
+    font-size: smaller;
+    padding-left: 10px;
+  
+  }
+
+  /*MEDIA QUERY*/
+
+  @media screen and (min-width: 375px) {
+
+  
+
+  }
+
+
+
+
