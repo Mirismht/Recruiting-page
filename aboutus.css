@@ -172,48 +172,50 @@ body{
   
 
   .container1{
-    display: flex;
-    height: 800px;
-    max-width:100%;
-    background-color: #F5F5F5;
-    justify-content: space-evenly;
-  }
-
-  .container-img{
-    display: flex;
     max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
   }
 
-  .img1{
-    object-fit: cover;
-    height:min(50%, 350px);
-    width:min(70%, 350px);
+   .container-img{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    width: min(70%, 650px);
+    padding: 20px 0;
+  } 
+
+   .img1{
+   object-fit: cover;
+    width:min(70%, 400px);
     border-radius: 50%;
-    z-index: 1;
     position: relative;
-    top:50px;
-    left:30px;
+    top: 25px;
+    z-index: 1;
+    right: 50px;
   }
 
   .img2{
-    object-fit: cover;                
-    height:min(50%, 350px);
-    width:min(70%, 350px);
-    max-width: 100%;
-    z-index: 2;
+    object-fit: cover;           
+    width:min(70%, 400px);
     border-radius: 50%;
+    z-index: 2;
     position: relative;
-    top:280px;
-    right: 100px;
-   
-  }
+    left: 60px;
+    bottom: 55px;
+
+  } 
+
 
     .obligation{
       align-self: center;
       white-space: pre-wrap;
-      width: 900px;
-     padding-right: 25px;
-     
+      margin: auto;
+     width: min(70%, 850px);
+     text-align: justify;
     }
 
     .obligation img{
@@ -242,7 +244,7 @@ body{
 
     /*CONTAINER2*/
     .container2{
-      height: 100%;
+       height: 100%;
         display: flex;
         background-color: 
         #A2A89F;
@@ -259,6 +261,7 @@ body{
     .asside1{
       font-size: clamp(0.63rem, calc(0.51rem + 1.23vw), 1.13rem);
       margin: 20px;
+      align-self: center;
     }
 
     .asside1 h2,
